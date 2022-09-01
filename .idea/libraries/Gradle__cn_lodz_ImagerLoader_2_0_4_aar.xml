@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.lodz:ImagerLoader:2.0.4@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gradle/caches/transforms-2/files-2.1/cf03f68982026eb93193e545c1ccd35b/jetified-ImagerLoader-2.0.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/gradle/caches/transforms-2/files-2.1/cf03f68982026eb93193e545c1ccd35b/jetified-ImagerLoader-2.0.4/res" />
+      <root url="file://$PROJECT_DIR$/gradle/caches/transforms-2/files-2.1/cf03f68982026eb93193e545c1ccd35b/jetified-ImagerLoader-2.0.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf03f68982026eb93193e545c1ccd35b/jetified-ImagerLoader-2.0.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf03f68982026eb93193e545c1ccd35b/jetified-ImagerLoader-2.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf03f68982026eb93193e545c1ccd35b/jetified-ImagerLoader-2.0.4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/gradle/caches/modules-2/files-2.1/cn.lodz/ImagerLoader/2.0.4/36e4f3f8a1cdfd79af0bfdb153dc94e2988d9742/ImagerLoader-2.0.4-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.lodz/ImagerLoader/2.0.4/36e4f3f8a1cdfd79af0bfdb153dc94e2988d9742/ImagerLoader-2.0.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/gradle/caches/modules-2/files-2.1/cn.lodz/ImagerLoader/2.0.4/1c7b1baa09e2a6026a9d24c7cec673161c95bb8b/ImagerLoader-2.0.4-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.lodz/ImagerLoader/2.0.4/1c7b1baa09e2a6026a9d24c7cec673161c95bb8b/ImagerLoader-2.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

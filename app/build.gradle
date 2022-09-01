@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.superv.alarm"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true// 启用dex分包
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.getbase:floatingactionbutton:1.9.0'
+    implementation 'com.wdullaer:materialdatetimepicker:1.2.1'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    implementation project(':pulltonextlayout')
+    //录音
+    implementation project(path: ':recorderlib')
+
+    // 权限申请
+    implementation 'org.permissionsdispatcher:permissionsdispatcher:4.7.0'
+    annotationProcessor 'org.permissionsdispatcher:permissionsdispatcher-processor:4.7.0'
+    //图片加载库
+    implementation 'cn.lodz:ImagerLoader:2.0.4'
+    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.multidex:multidex:2.0.1"
+    // 组件库
+    implementation 'cn.lodz:Component:2.1.2'
+    // butterknife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+}

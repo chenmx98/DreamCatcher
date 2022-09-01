@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Alarm.iml" filepath="$PROJECT_DIR$/.idea/modules/Alarm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Alarm.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Alarm.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Alarm.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Alarm.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Alarm.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Alarm.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Alarm.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Alarm.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pulltonextlayout/Alarm.pulltonextlayout.iml" filepath="$PROJECT_DIR$/.idea/modules/pulltonextlayout/Alarm.pulltonextlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pulltonextlayout/Alarm.pulltonextlayout.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/pulltonextlayout/Alarm.pulltonextlayout.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pulltonextlayout/Alarm.pulltonextlayout.main.iml" filepath="$PROJECT_DIR$/.idea/modules/pulltonextlayout/Alarm.pulltonextlayout.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pulltonextlayout/Alarm.pulltonextlayout.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/pulltonextlayout/Alarm.pulltonextlayout.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recorderlib/Alarm.recorderlib.iml" filepath="$PROJECT_DIR$/.idea/modules/recorderlib/Alarm.recorderlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recorderlib/Alarm.recorderlib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/recorderlib/Alarm.recorderlib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recorderlib/Alarm.recorderlib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/recorderlib/Alarm.recorderlib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recorderlib/Alarm.recorderlib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/recorderlib/Alarm.recorderlib.unitTest.iml" />
+    </modules>
+  </component>
+</project>

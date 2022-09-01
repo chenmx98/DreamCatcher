@@ -1,0 +1,44 @@
+
+<resources>
+
+    <string name="app_name">Dream Catcher</string>
+    <string name="splash_check_permission_tips">请在权限页面打开应用所有权限</string>
+    <string name="splash_check_permission_title">请确认已打开该应用使用的所有权限</string>
+    <string name="splash_check_permission_confirm">已确认</string>
+    <string name="splash_check_permission_unconfirmed">再次确认</string>
+    <string name="splash_check_permission_cancel">请在设置中打开权限后重启应用</string>
+
+    <string name="title_activity_add_alarm">Create Alarm</string>
+    <string name="title_activity_edit_alarm">Edit Alarm</string>
+    <string name="title_activity_about">Recorded Dreams</string>
+    <string name="title_activity_finish">Finish</string>
+    <string name="add_alarm">Name</string>
+    <string name="details">Never Lose Your Precious Dreams</string>
+    <string name="date">Date</string>
+    <string name="time">Alarm time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="wake_method">Wake Method</string>
+    <string name="repeat_type">Repeat type</string>
+    <string name="action_discard_alarm">Discard Alarm</string>
+    <string name="action_save_alarm">Save Alarm</string>
+    <string name="no_alarm">Click + to add alarm</string>
+    <string name="popup_menu_edit">Edit</string>
+    <string name="popup_menu_delete">Delete</string>
+    <string name="ring_type">Ring tyoe</string>
+    <string name="calculate_name">数学计算</string>
+    <string name="ca_details">随机生成数学计算题，需回答正确关闭闹钟</string>
+    <string name="ca_set">点我设置</string>
+    <string name="question">自定义问题</string>
+    <string name="que_details">自定义问题和答案，回答正确才能关闭闹钟</string>
+    <string name="que_set">点我设置</string>
+    <string name="set_que">请输入您的问题：</string>
+    <string name="an_input">请输入问题的答案：</string>
+    <string name="que_sure">确定并保存</string>
+    <string name="que_can">取消</string>
+    <string name="answer_hint">答案输在这儿...</string>
+    <string name="input_complete">输入好了</string>
+    <string name="alarm_complete">Good morning dreamers!</string>
+
+
+</resources>

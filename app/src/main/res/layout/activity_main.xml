@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:hezhihu89="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#A9CEF4"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="16dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+        <com.superv.alarm.view.TimeView
+            android:id="@+id/time_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:textColor="#6f6f6f"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_demo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:text="Meet the “real” you"
+            android:textColor="@color/primary"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/no_alarm_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/no_alarm"
+        android:textColor="@color/primary_text_grey"
+        android:visibility="gone" />
+
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:id="@+id/add_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/fab_pressed" />
+
+
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:id="@+id/add_rec"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/fab_pressed" />
+
+</RelativeLayout>

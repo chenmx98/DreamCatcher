@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        android:background="@color/background_alarm_white"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/thumbnail_image"/>
+        <RelativeLayout
+            android:layout_toEndOf="@+id/thumbnail_image"
+            android:id="@+id/lay_up"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/re_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="title"
+                android:textColor="@color/primary_text_grey"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/re_time"
+                android:layout_width="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:fontFamily="sans-serif-thin"
+                android:layout_height="wrap_content"
+                android:textSize="33sp"
+                android:gravity="bottom"
+                android:text="15.00"
+                android:textColor="@color/primary_text_grey"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_up"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/thumbnail_image">
+
+        <TextView
+            android:text="123"
+            android:id="@+id/re_repeatType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/primary_text_grey"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/active_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/delete_image"
+            android:clickable="true"
+            android:src="@drawable/ic_alarm_on_grey_600_24dp" />
+
+        <ImageView
+            android:id="@+id/delete_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/active_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_delete_grey_600_24dp" />
+
+    </RelativeLayout>
+    </RelativeLayout>

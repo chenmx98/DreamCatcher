@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--自定义地址-->
+    <external-path
+        name="app_provider_path"
+        path="TestDemo" />
+
+    <!--默认地址-->
+    <external-path
+        name="dcim_provider_path"
+        path="DCIM" />
+
+    <external-path
+        name="files_root"
+        path="Android/data/com.superv.alarm.fileprovider/" />
+
+    <external-path
+        name="external_storage_root"
+        path="." />
+
+    <external-path
+        name="external_storage_root"
+        path="/storage/emulated/0/Android/data/com.superv.alarm/files/TestDemo/" />
+
+</paths>

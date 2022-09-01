@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: com.getbase:floatingactionbutton:1.9.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/gradle/caches/transforms-2/files-2.1/d9831c769fc19407d9d1c4f1db01b9da/jetified-floatingactionbutton-1.9.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5af614e41042df32da7ed107cc910242/jetified-floatingactionbutton-1.9.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/gradle/caches/transforms-2/files-2.1/d9831c769fc19407d9d1c4f1db01b9da/jetified-floatingactionbutton-1.9.0/res" />
+      <root url="file://$PROJECT_DIR$/gradle/caches/transforms-2/files-2.1/d9831c769fc19407d9d1c4f1db01b9da/jetified-floatingactionbutton-1.9.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/gradle/caches/transforms-2/files-2.1/d9831c769fc19407d9d1c4f1db01b9da/jetified-floatingactionbutton-1.9.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5af614e41042df32da7ed107cc910242/jetified-floatingactionbutton-1.9.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5af614e41042df32da7ed107cc910242/jetified-floatingactionbutton-1.9.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5af614e41042df32da7ed107cc910242/jetified-floatingactionbutton-1.9.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/gradle/caches/modules-2/files-2.1/com.getbase/floatingactionbutton/1.9.0/37a8159b53e6be190152174d20caa8309a8e73c1/floatingactionbutton-1.9.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.getbase/floatingactionbutton/1.9.0/37a8159b53e6be190152174d20caa8309a8e73c1/floatingactionbutton-1.9.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/gradle/caches/modules-2/files-2.1/com.getbase/floatingactionbutton/1.9.0/85b387d3e5b0028b5f4f93a0654dfe03aed2631a/floatingactionbutton-1.9.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.getbase/floatingactionbutton/1.9.0/85b387d3e5b0028b5f4f93a0654dfe03aed2631a/floatingactionbutton-1.9.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

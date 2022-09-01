@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.superv.alarm">
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+
+    <!-- 允许读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- ********************* 需要申请（只要同组有一个授权整组的权限都可以使用） ********************* -->
+    <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 读录音储 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 前台通知 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AlarmTheme">
+        <activity android:name="com.superv.alarm.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.superv.alarm.activity.AddAlarmActivity"
+            android:label="@string/title_activity_add_alarm">
+        </activity>
+        <activity
+            android:name="com.superv.alarm.activity.EditAlarmActivity"
+            android:label="@string/title_activity_edit_alarm">
+        </activity>
+        <activity android:name=".activity.RecFilesActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <receiver android:name="com.superv.alarm.MyAlarmReceiver"/>
+
+        <receiver android:name="com.superv.alarm.SnoozeReceiver"/>
+
+        <activity android:name="com.superv.alarm.activity.PlayAlarmActivity"
+            android:launchMode="singleTask"/>
+
+        <service android:name="com.superv.alarm.AlarmService"/>
+
+        <receiver android:name="com.superv.alarm.AlarmService$RebootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.superv.alarm.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <service
+            android:name=".recorder.RecordService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

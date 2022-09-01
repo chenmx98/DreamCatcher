@@ -1,0 +1,226 @@
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background= "#A9CEF4"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/add_reminder_layout_top"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        android:layout_height="38dp">
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/add_reminder_layout_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/details"
+                android:textColor="@color/primary_text_grey"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="selectTime">
+
+                <ImageView
+                    android:id="@+id/time_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_access_time_grey600_24dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/time_icon"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time"
+                        android:textColor="@color/primary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/set_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/primary_text_grey"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/repeat"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="selectRepeat">
+
+                <ImageView
+                    android:id="@+id/repeat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_repeat_grey_600_24dp" />
+
+                <LinearLayout
+                    android:id="@+id/repeat_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/repeat_icon"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/repeat_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repeat"
+                        android:textColor="@color/primary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/set_repeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/primary_text_grey"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/holdSleep"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="selectRing">
+
+                <ImageView
+                    android:id="@+id/holdSleep_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_notifications_paused_grey_600_24dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/holdSleep_icon"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/holdSleep_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ring_type"
+                        android:textColor="@color/primary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/set_ring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_text_grey"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/starred1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="selectFab1"
+        fab:fab_icon="@drawable/ic_notifications_off_grey600_24dp"
+        fab:fab_colorNormal="@color/accent"
+        fab:fab_colorPressed="@color/fab_pressed"
+        app:fab_size="normal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/starred2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="selectFab2"
+        fab:fab_icon="@drawable/ic_notifications_on_white_24dp"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/primary"
+        app:fab_size="normal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"/>
+
+</RelativeLayout>
